@@ -150,14 +150,15 @@ body {
   color: var(--project-color-gray);
 }
 
-.contact-mail:hover,
+/* .contact-mail:hover,
 .contact-tel:hover,
 .contact-mail:focus,
 .contact-tel:focus {
   color: var(--project-color-blue);
+  fill: var(--project-color-blue);
   transition: color 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+} */
 
 .contact-icon-box {
   width: 16px;
@@ -178,14 +179,11 @@ body {
   width: 100%;
   height: 100%;
 }
-/* .contact li:hover {
-  fill: var(--project-color-blue);
-} */
 
 .contact li:hover .contact-icon,
-.contact li:focus .contact-icon,
+.contact li:focus-within .contact-icon,
 .contact li:hover a,
-.contact li:focus a {
+.contact li:focus-within a {
   fill: var(--project-color-blue);
   color: var(--project-color-blue);
   transition: color 250ms;
