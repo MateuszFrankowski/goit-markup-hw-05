@@ -14,6 +14,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   </head>
   <body>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <p>zaliczone?</p>
+        <button type="button" class="close-btn" data-modal-close>X</button>
+      </div>
+    </div>
     <header>
       <div class="menu">
         <div class="container">
@@ -56,7 +62,7 @@
       <section class="header">
         <div class="container">
           <h1 class="motto-text">Efektywne rozwiązania dla waszego biznesu</h1>
-          <button class="order-button" type="button">Zamów usługę</button>
+          <button class="order-button" type="button" data-modal-open>Zamów usługę</button>
         </div>
       </section>
     </header>
@@ -122,6 +128,7 @@
 
           <ul class="ourwork-photos">
             <li>
+              <div class="text-with-background"><p>Aplikacje komputerowe</p></div>
               <img
                 src="images/pc.jpg"
                 alt="writing a code on the keyboard"
@@ -130,9 +137,11 @@
               />
             </li>
             <li>
+              <div class="text-with-background"><p>Aplikacje mobilne</p></div>
               <img src="images/phone.jpg" alt="Smartphone in hand " width="370" height="294" />
             </li>
             <li>
+              <div class="text-with-background"><p>Aplikacje graficzne</p></div>
               <img
                 src="images/tablet.jpg"
                 alt="Choosing a color on the tablet"
@@ -443,6 +452,6 @@
         </div>
       </div>
     </footer>
-    <script src="./js/modal.js"></script>
+    <script src="js/modal.js"></script>
   </body>
 </html>
