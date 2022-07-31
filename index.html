@@ -5,18 +5,78 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web Studio</title>
+    <meta name="description" content="Najlepsza Firma zajmująca się dystrybucją oplikacji" />
+    <meta name="keywords" content="aplikacje adroid web new trchnology" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/styles.css?=1.0.2" />
+    <link rel="stylesheet" href="./css/styles.css?=1.0.3" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   </head>
   <body>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <p>zaliczone?</p>
+        <p class="form-title">Zostaw swoje dane w formularzu poniżej</p>
+        <form class="form">
+          <div class="label-input-box">
+            <input
+              type="text"
+              class="form-input"
+              id="username"
+              name="username"
+              required
+              minlength="3"
+            />
+
+            <svg class="form-icon">
+              <use href="images/sprite.svg#icon-persol-form"></use>
+            </svg>
+            <label for="username" class="form-label"><span class="label-text">Imie</span> </label>
+          </div>
+          <div class="label-input-box">
+            <input type="tel" class="form-input" name="tel" id="tel" required />
+            <svg class="form-icon">
+              <use href="images/sprite.svg#icon-phone-form"></use>
+            </svg>
+            <label for="tel" class="form-label"><span class="label-text">Telefon</span> </label>
+          </div>
+          <div class="label-input-box">
+            <input type="email" class="form-input" name="checkbox" id="email" required />
+            <svg class="form-icon">
+              <use href="images/sprite.svg#icon-email-form"></use>
+            </svg>
+            <label for="email" class="form-label"><span class="label-text">Email</span> </label>
+          </div>
+          <div class="label-input-box">
+            <label class="form-label">
+              <span class="label-text">Komentarz</span>
+              <textarea
+                name="feedback"
+                class="form-text-area"
+                rows="5"
+                placeholder="Wprowadż tekst"
+              ></textarea>
+            </label>
+          </div>
+          <div class="form-policy">
+            <input
+              type="checkbox"
+              class="form-policy visually-hidden"
+              name="mail"
+              id="user-policy"
+              required
+            />
+
+            <label for="user-policy" class="form-policy-text">
+              Oświadczam iż akceptuję <a href="" class="consents">Regulamin</a> i
+              <a href="" class="consents">Politykę Prywatności.</a></label
+            >
+          </div>
+          <button type="submit" class="submit-btn">Wyślij</button>
+        </form>
+
         <button type="button" class="close-btn" data-modal-close>X</button>
       </div>
     </div>
@@ -449,6 +509,28 @@
               </div>
             </a>
           </div>
+        </div>
+        <div class="subscribtion">
+          <p class="subs-form-title">Zapisz Się do newslettera</p>
+          <form class="subs-form">
+            <label class="subs-form-label">
+              <input
+                type="email"
+                class="subs-form-input"
+                name="mail-newsletter"
+                placeholder="E-mail"
+                required
+              />
+            </label>
+
+            <button type="submit" class="submit-btn-news">
+              Zapisz się
+
+              <svg class="submit-social-icon">
+                <use href="images/sprite.svg#icon-send-form"></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>
